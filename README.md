@@ -34,6 +34,7 @@ Lasso Regression produced the lowest RMSE and highest R² among the models teste
 
 - `house_price_prediction.ipynb` — full analysis and modeling pipeline
 - `kc_house_data.csv` — King County housing dataset
+- `report.pdf` — full project write-up
 
 ## Running the Project
 
