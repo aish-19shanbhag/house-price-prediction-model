@@ -1,0 +1,14 @@
+rows: train 17,290  hold-out 4,323
+Simple Linear Regression     hold-out RMSE $  297,013  MAE $ 172,605  R2 0.4165  adjR2 0.4163 | CV RMSE $274,857 ± 18,175  CV R2 0.4193 ± 0.0060  (0.4s)
+Multiple Linear Regression   hold-out RMSE $  136,807  MAE $  74,129  R2 0.8762  adjR2 0.8735 | CV RMSE $120,571 ± 7,570  CV R2 0.8880 ± 0.0068  (0.8s)
+Ridge (alpha by CV)          hold-out RMSE $  136,793  MAE $  74,125  R2 0.8762  adjR2 0.8736 | CV RMSE $120,566 ± 7,570  CV R2 0.8880 ± 0.0068  (2.2s)
+Lasso (alpha by CV)          hold-out RMSE $  136,786  MAE $  74,122  R2 0.8762  adjR2 0.8736 | CV RMSE $120,552 ± 7,575  CV R2 0.8880 ± 0.0068  (6.0s)
+Gradient Boosting            hold-out RMSE $  113,376  MAE $  62,475  R2 0.9150  adjR2 0.9145 | CV RMSE $110,252 ± 7,866  CV R2 0.9062 ± 0.0084  (117.8s)
+HistGradientBoosting         hold-out RMSE $  115,742  MAE $  63,450  R2 0.9114  adjR2 0.9109 | CV RMSE $117,612 ± 14,400  CV R2 0.8940 ± 0.0130  (5.3s)
+XGBoost                      hold-out RMSE $  114,000  MAE $  61,858  R2 0.9140  adjR2 0.9136 | CV RMSE $112,587 ± 13,500  CV R2 0.9026 ± 0.0131  (9.3s)
+
+best model by CV RMSE: Gradient Boosting; best linear model: Lasso (alpha by CV)
+hold-out RMSE reduction, Gradient Boosting vs Lasso: 17.1%
+Lasso alpha 3.16e-06, non-zero coefficients 89/91
+folium map written: True
+saved models/house_price_model.joblib

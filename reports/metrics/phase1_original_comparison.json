@@ -1,0 +1,91 @@
+{
+  "protocol": "raw price, raw features, train_test_split(train_size=0.8, random_state=3), cross_val_score(cv=5) on all 21,613 rows",
+  "winner_by_cv5_r2": "Lasso Regression (alpha=1, 16 features)",
+  "winner_by_test_rmse": "Lasso Regression (alpha=1, 16 features)",
+  "results": [
+    {
+      "model": "Lasso Regression",
+      "setting": "alpha=1, 16 features",
+      "n_features": 16,
+      "rmse_test": 198682.2157129016,
+      "r2_train": 0.67354004744129,
+      "adj_r2_train": 0.6732376472073447,
+      "r2_test": 0.6924706547577694,
+      "adj_r2_test": 0.6913279539858521,
+      "cv5_r2_mean": 0.6739879598803105,
+      "cv5_r2_std": 0.00873374919481078
+    },
+    {
+      "model": "Lasso Regression",
+      "setting": "alpha=100, 16 features",
+      "n_features": 16,
+      "rmse_test": 198766.0295641106,
+      "r2_train": 0.6735170960561458,
+      "adj_r2_train": 0.6732146745623057,
+      "r2_test": 0.6922111382699511,
+      "adj_r2_test": 0.6910674732008195,
+      "cv5_r2_mean": 0.6739689691947536,
+      "cv5_r2_std": 0.008774056791657738
+    },
+    {
+      "model": "Lasso Regression",
+      "setting": "alpha=1000, 16 features",
+      "n_features": 16,
+      "rmse_test": 200171.1150107087,
+      "r2_train": 0.6713382216396045,
+      "adj_r2_train": 0.6710337818518568,
+      "r2_test": 0.6878442127516134,
+      "adj_r2_test": 0.686684321298763,
+      "cv5_r2_mean": 0.6718579720288153,
+      "cv5_r2_std": 0.00965085239674131
+    },
+    {
+      "model": "Multiple Linear Regression-2",
+      "setting": "10 selected features",
+      "n_features": 10,
+      "rmse_test": 229257.1187362902,
+      "r2_train": 0.5846974372642513,
+      "adj_r2_train": 0.5844570862238347,
+      "r2_test": 0.590537405187324,
+      "adj_r2_test": 0.5895878166093724,
+      "cv5_r2_mean": 0.582568123071874,
+      "cv5_r2_std": 0.01056377118277964
+    },
+    {
+      "model": "Multiple Linear Regression-1",
+      "setting": "6 selected features",
+      "n_features": 6,
+      "rmse_test": 248514.01074169486,
+      "r2_train": 0.5141922138545295,
+      "adj_r2_train": 0.514023559875656,
+      "r2_test": 0.5188612547922407,
+      "adj_r2_test": 0.5181923872131753,
+      "cv5_r2_mean": 0.5123879998086206,
+      "cv5_r2_std": 0.007411409940176279
+    },
+    {
+      "model": "Simple Linear Regression",
+      "setting": "sqft_living only",
+      "n_features": 1,
+      "rmse_test": 254289.1486936708,
+      "r2_train": 0.49203514753892297,
+      "adj_r2_train": 0.49200576502779025,
+      "r2_test": 0.496239362249571,
+      "adj_r2_test": 0.49612277797793247,
+      "cv5_r2_mean": 0.49108629053771236,
+      "cv5_r2_std": 0.006579178352765297
+    },
+    {
+      "model": "Gradient Boosting",
+      "setting": "400 trees, depth 5, sqft_living only",
+      "n_features": 1,
+      "rmse_test": 253598.03090411512,
+      "r2_train": 0.626118775018363,
+      "adj_r2_train": 0.6260971483857287,
+      "r2_test": 0.4989739250182751,
+      "adj_r2_test": 0.49885797360078343,
+      "cv5_r2_mean": 0.4667235589965485,
+      "cv5_r2_std": 0.05342028689300565
+    }
+  ]
+}
